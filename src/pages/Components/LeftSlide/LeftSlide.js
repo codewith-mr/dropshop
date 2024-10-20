@@ -5,7 +5,7 @@ const Slide = () => {
   return (
     <>
       <div className={`${styles.leftslider}`}>
-        <p>hello</p>
+        <p>Left side</p>
       </div>
     </>
   );

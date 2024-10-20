@@ -1,3 +1,6 @@
 .mainContainer {
   display: flex;
+  justify-content: space-between; /* Ensures space between the slides and the HomeUi */
+  align-items: stretch; /* Makes items align to the same height */
+  width: 100vw;
 }

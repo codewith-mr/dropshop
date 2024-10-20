@@ -4,8 +4,8 @@ import styles from "../Home/HomeUi.module.css";
 const HomeUi = () => {
   return (
     <>
-      <div className={`${styles.mainContainer}`}>
-        <p>hello</p>
+      <div className={`container ${styles.mainContainer}`}>
+        <p>main content</p>
       </div>
     </>
   );

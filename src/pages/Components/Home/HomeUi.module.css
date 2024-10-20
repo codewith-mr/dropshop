@@ -1,5 +1,7 @@
 .mainContainer {
   background-color: #ffcaca;
   height: 200vh;
-  width: 74%;
+  margin: 0 0 0 150px;
+  max-width: 1386px;
+  min-width: 300px;
 }
