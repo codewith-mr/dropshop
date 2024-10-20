@@ -1,0 +1,7 @@
+.rightslider {
+  background-color: violet;
+  width: 18%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+}
