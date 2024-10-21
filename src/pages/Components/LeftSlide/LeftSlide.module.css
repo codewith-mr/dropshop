@@ -1,5 +1,5 @@
 .leftslider {
-  background-color: rgb(255, 255, 255);
+  background-color: #fffff06c;
   width: 120px;
   height: 100vh;
   position: fixed;
@@ -11,7 +11,7 @@
   border-right: 1px solid rgb(228, 228, 228);
 }
 .logo {
-  background-color: black;
+  background-color: #26241b;
   height: 60px;
   width: 60px;
   border-radius: 12px;
@@ -30,10 +30,10 @@
   align-items: center;
   cursor: pointer;
   border-radius: 6px;
-  color: rgb(197, 152, 68);
+  color: #26241b;
 }
 .icon > span:hover {
-  background-color: rgb(255, 237, 205);
+  background-color: #26241b11;
 }
 .logout {
   height: 50px;
@@ -43,9 +43,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(199, 199, 199);
+  color: #26241b52;
 }
 .logout:hover {
-  color: rgb(148, 148, 148);
-  background-color: rgb(235, 235, 235);
+  color: #26241bda;
+  background-color: #26241b11;
 }

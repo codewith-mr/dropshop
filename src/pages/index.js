@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import HomeUi from "./Components/Home/HomeUi";
 import LeftSlide from "./Components/LeftSlide/LeftSlide";
 import RightSlide from "./Components/RightSlide/RightSlide";
+// import LoginPage from "./Components/Login/Login";
 import styles from "../pages/index.module.css";
 
 const geistSans = localFont({
@@ -29,6 +30,7 @@ export default function Home() {
         <LeftSlide />
         <HomeUi />
         <RightSlide />
+        {/* <LoginPage /> */}
       </div>
     </>
   );

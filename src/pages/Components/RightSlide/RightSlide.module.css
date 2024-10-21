@@ -1,5 +1,31 @@
 .rightslider {
-  background-color: rgb(255, 243, 222);
-  width: 20%;
+  background-color: #fffff06c;
+  width: 400px;
   height: 100vh;
+  border-left: 1px solid rgb(228, 228, 228);
+}
+.profileAndIcons {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+.profileAndIcons > :first-child,
+.profileAndIcons > :nth-child(2) {
+  height: 30px;
+  width: 30px;
+  padding: 15px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #26241b;
+}
+
+.profileAndIcons > div {
+  background-color: #26241b;
+  height: 60px;
+  cursor: pointer;
+  width: 60px;
+  border-radius: 12px;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../LeftSlide/LeftSlide.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { leftSlideIcon } from "@/Utils/Mock/HomeUiData";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 
 const Slide = () => {
