@@ -1,9 +1,9 @@
 .mainContainer {
-  /* background-color: #ffeaea; */
   height: 200vh;
   margin: 0 0 0 120px;
   max-width: 1416px;
   min-width: 300px;
+  padding: 0;
 }
 .searchInputBox {
   /* background-color: turquoise; */
@@ -11,13 +11,13 @@
   width: 100%;
   display: flex;
   align-items: center;
+  padding: 0 10px;
 }
 .searchInputBox > :first-child {
   display: flex;
   align-items: center;
   gap: 10px;
   justify-content: center;
-  /* background-color: yellowgreen; */
   width: 100%;
 }
 .searchInputBox > :first-child > input {
@@ -37,4 +37,72 @@
   padding: 7px 15px;
   border-radius: 6px;
   background-color: #26241b;
+}
+.sliderContainer {
+  /* background-color: tomato; */
+  height: 450px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+  position: relative;
+}
+.sliderContainer > :first-child {
+  background-color: wheat;
+  height: 400px;
+  width: 950px;
+  min-width: 700px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.img1 {
+  width: 100%;
+}
+.img2,
+.img3 {
+  height: 400px !important;
+}
+
+.sliderContainer > :nth-child(2) {
+  background-color: wheat;
+  height: 400px;
+  width: 360px;
+  min-width: 360px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.keywords {
+  /* background-color: #13120f11; */
+  padding: 10px 0;
+  max-width: 100%;
+  padding: 10px 3rem;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.keywords > div {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.keywords > div > span {
+  background-color: #26241b13;
+  color: #26241b;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.keywords > :nth-child(2) {
+  cursor: pointer;
+  color: #26241b44;
+  padding: 0 0 0 10px;
 }
