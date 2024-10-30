@@ -48,7 +48,6 @@ const RightSlide = () => {
               <Link
                 className={`${styles.link}`}
                 href="/Components/CreatePost/CreatePost"
-                // href="/createPost/create-post"
                 passHref
               >
                 <button>Create Post</button>

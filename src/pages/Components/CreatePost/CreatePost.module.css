@@ -1,0 +1,110 @@
+.createPost {
+  background-color: rgba(255, 168, 55, 0.041);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.createPost > :first-child {
+  background-color: rgb(255, 253, 249);
+  border: 1px solid rgba(148, 148, 148, 0.192);
+  box-shadow: 0 0 6px rgba(158, 158, 158, 0.178);
+  width: 1100px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 3rem;
+}
+.createPost > :first-child > :first-child {
+  background-color: rgb(255, 254, 251);
+  border: 1px solid rgb(218, 218, 218);
+  max-height: 600px;
+  min-height: 300px;
+  width: 100%;
+  max-width: 500px;
+  min-width: 200px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.createPost > :first-child :first-child > input {
+  display: none;
+}
+.createPost > div > :first-child {
+  font-size: 3rem;
+  color: rgb(161, 161, 161);
+}
+.createPost > button {
+  all: unset;
+  background-color: rgb(0, 147, 245);
+  width: 50%;
+  padding: 10px 0;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+.createPost > :first-child > :nth-child(2) {
+  /* background-color: rgba(255, 109, 25, 0.918); */
+  height: 600px;
+  width: 100%;
+  max-width: 500px;
+  min-width: 200px;
+  padding: 0 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.createPost > :first-child > :nth-child(2) > span {
+  display: flex;
+  flex-direction: column;
+}
+.createPost > :first-child > :nth-child(2) > span > input,
+.createPost > :first-child > :nth-child(2) > span > textarea {
+  all: unset;
+  outline: none;
+  border: 1px solid gainsboro;
+  background-color: rgb(250, 250, 250);
+  border-radius: 4px;
+  padding: 5px;
+}
+.createPost > :first-child > :nth-child(2) > span > textarea {
+  height: 200px;
+  max-height: 200px;
+  text-wrap: wrap;
+  overflow-wrap: break-word;
+}
+.createPost > :first-child > :nth-child(2) > button {
+  all: unset;
+  background-color: yellowgreen;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 4px;
+  margin-top: 5.4rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1125px) {
+  .createPost {
+    justify-content: start;
+    align-items: start;
+  }
+  .createPost > :first-child {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 4rem 1rem;
+  }
+  .createPost > :first-child > :nth-child(2) {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .createPost > :first-child > :nth-child(2) > button {
+    margin-top: 2rem;
+  }
+}
