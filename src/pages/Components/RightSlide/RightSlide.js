@@ -44,7 +44,12 @@ const RightSlide = () => {
           {showProfileOption && (
             <span>
               <button>Profile</button>
-              <button>Login/Signup</button>
+              <Link
+                className={`${styles.buttonLink}`}
+                href="/Components/LoginSignup/Login/Login"
+              >
+                <button>Login/Signup</button>
+              </Link>
               <Link
                 className={`${styles.link}`}
                 href="/Components/CreatePost/CreatePost"

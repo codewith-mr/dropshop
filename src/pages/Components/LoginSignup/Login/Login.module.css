@@ -1,0 +1,63 @@
+.loginContainer {
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginContainer > div {
+  background-color: rgb(252, 252, 252);
+  border: 1px solid rgb(228, 228, 228);
+  height: auto;
+  width: 520px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  gap: 10px;
+}
+.loginContainer > div > span {
+  display: flex;
+  flex-direction: column;
+}
+.loginContainer > div > span > input,
+.loginContainer > div > span > div {
+  all: unset;
+  outline: none;
+  border: 1px solid gainsboro;
+  background-color: rgb(250, 250, 250);
+  border-radius: 4px;
+  padding: 5px;
+}
+.loginContainer > div > span > div > input {
+  all: unset;
+  padding: 0 5px 0 0;
+  width: 94%;
+}
+.loginContainer > div > span > div > :nth-child(2) {
+  cursor: pointer;
+}
+
+.loginContainer > div > div > button {
+  all: unset;
+  background-color: yellowgreen;
+  text-align: center;
+  padding: 5px 0;
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.forgot {
+  font-size: 14px;
+  color: rgb(0, 110, 255);
+  height: 20px;
+  margin-left: auto;
+  cursor: pointer;
+  /* background-color: yellowgreen; */
+}
+.forgot :hover {
+  color: rgb(0, 99, 228);
+  text-decoration: underline;
+}

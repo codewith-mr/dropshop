@@ -61,16 +61,28 @@
   border: 1px solid rgb(221, 221, 221);
   border-radius: 6px;
 }
-.link {
+.buttonLink > button {
+  all: unset;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  cursor: pointer;
+  color: #26241be1;
+  background-color: #fff;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 6px;
+}
+.link,
+.buttonLink {
   width: 100%;
   text-align: center;
   padding: 5px 0;
 }
 .link > button {
+  all: unset;
   color: #26241be1;
   border-radius: 6px !important;
   padding: 5px 0 !important;
-  all: unset;
   background-color: rgb(255, 161, 84);
   width: 100%;
 }
