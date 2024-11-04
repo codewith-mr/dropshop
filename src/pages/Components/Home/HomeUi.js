@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import styles from "../Home/HomeUi.module.css"; // Make sure the path is correct
+import styles from "../Home/HomeUi.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMagnifyingGlass,
@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Carousel from "react-bootstrap/Carousel";
 import { HomeUiKeywords } from "@/Utils/Mock/HomeUiData";
+import Product from "./Product/Product";
 
 const shuffleArray = (array) => {
   return array
@@ -95,6 +96,7 @@ const HomeUi = () => {
           onClick={toggleIcon}
         />
       </div>
+      <Product />
     </div>
   );
 };

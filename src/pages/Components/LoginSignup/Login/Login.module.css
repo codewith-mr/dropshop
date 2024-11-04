@@ -17,6 +17,13 @@
   padding: 2rem 1.5rem;
   gap: 10px;
 }
+.loginContainer > div > h3 {
+  margin: 0;
+  font-weight: 600;
+}
+.loginContainer > div > h6 {
+  margin: 0 0 2rem 0;
+}
 .loginContainer > div > span {
   display: flex;
   flex-direction: column;
