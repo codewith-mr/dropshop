@@ -6,7 +6,7 @@ import { faCartArrowDown } from "@fortawesome/free-solid-svg-icons";
 import styles from "../Product/Product.module.css";
 
 const product = () => {
-  const { products = [] } = useContext(ProductContext);
+  const { products = [], addToCart } = useContext(ProductContext);
 
   return (
     <div className={styles.container}>
@@ -46,6 +46,7 @@ const product = () => {
                 <FontAwesomeIcon
                   style={{ cursor: "pointer" }}
                   icon={faCartArrowDown}
+                  onClick={() => addToCart(product)}
                 />
               </div>
             </Card>
