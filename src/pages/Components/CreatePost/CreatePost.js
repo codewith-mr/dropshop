@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import styles from "../CreatePost/CreatePost.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpFromBracket } from "@fortawesome/free-solid-svg-icons";
-import { createPostData } from "@/Utils/Mock/CreatePost";
+import { createPostData } from "@/Utils/Mock/CreatePostData";
 import { ProductContext } from "../context/ProductContext";
 
 const CreatePost = () => {
@@ -15,7 +15,7 @@ const CreatePost = () => {
     image: null,
   });
   const fileRef = useRef(null);
-  const { addProduct } = useContext(ProductContext); // Use addProduct instead of setProduct
+  const { addProduct } = useContext(ProductContext);
   const router = useRouter();
 
   const fileSelector = () => {
@@ -43,8 +43,8 @@ const CreatePost = () => {
 
   const handleCreateClick = () => {
     if (chooseFile && formData) {
-      addProduct(formData); // Add product to context without replacing existing products
-      router.push("/"); // Redirect to home page
+      addProduct(formData);
+      router.push("/");
     } else {
       alert("Please fill all inputs and select an image.");
     }

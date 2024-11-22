@@ -3,8 +3,10 @@ import localFont from "next/font/local";
 import HomeUi from "./Components/Home/HomeUi";
 import LeftSlide from "./Components/LeftSlide/LeftSlide";
 import RightSlide from "./Components/RightSlide/RightSlide";
+import Chatbot from "./Components/Chatbot/Chatbot";
 // import LoginPage from "./Components/Login/Login";
 import styles from "../pages/index.module.css";
+import { useState } from "react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -18,6 +20,26 @@ const geistMono = localFont({
 });
 
 export default function Home() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const changeActiveIndex = (index) => {
+    setActiveIndex(index);
+  };
+
+  // Function to render the active component
+  const renderActiveComponent = () => {
+    switch (activeIndex) {
+      case 0:
+        return <HomeUi />;
+      case 1:
+        return <HomeUi />;
+      case 2:
+        return <Chatbot />;
+      default:
+        return <HomeUi />;
+    }
+  };
+
   return (
     <>
       <Head>
@@ -27,8 +49,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={`${styles.mainContainer}`}>
-        <LeftSlide />
-        <HomeUi />
+        <LeftSlide changeActiveIndex={changeActiveIndex} />
+        {renderActiveComponent()}
         <RightSlide />
         {/* <LoginPage /> */}
       </div>
