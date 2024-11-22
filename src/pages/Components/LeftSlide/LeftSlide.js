@@ -3,6 +3,7 @@ import styles from "../LeftSlide/LeftSlide.module.css";
 import { leftSlideIcon } from "@/Utils/Mock/HomeUiData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightFromBracket } from "@fortawesome/free-solid-svg-icons";
+import Chatbot from "../Chatbot/Chatbot";
 
 const Slide = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -31,6 +32,7 @@ const Slide = () => {
         <div className={`${styles.logout}`}>
           <FontAwesomeIcon icon={faArrowRightFromBracket} size="xl" />
         </div>
+        <Chatbot />
       </div>
     </>
   );
