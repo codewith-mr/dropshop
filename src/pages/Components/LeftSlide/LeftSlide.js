@@ -4,11 +4,14 @@ import { leftSlideIcon } from "@/Utils/Mock/HomeUiData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 
-const Slide = () => {
+const Slide = ({ changeActiveIndex }) => {
   const [activeIndex, setActiveIndex] = useState(0);
+
   const changeClass = (index) => {
     setActiveIndex(index);
+    changeActiveIndex(index);
   };
+
   return (
     <>
       <div className={`${styles.leftslider}`}>
@@ -19,9 +22,9 @@ const Slide = () => {
         <div className={`${styles.icon}`}>
           {leftSlideIcon.map((item, index) => (
             <span
+              key={index}
               onClick={() => changeClass(index)}
               className={activeIndex === index ? styles.active : ""}
-              key={index}
             >
               <FontAwesomeIcon icon={item.icon} size="xl" />
             </span>
