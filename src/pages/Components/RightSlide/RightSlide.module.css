@@ -122,14 +122,15 @@
 }
 
 .cartItems {
-  background-color: orange;
+  /* background-color: orange; */
   height: auto;
-  padding: 1rem 1rem 0.5rem 1rem;
+  padding: 1rem 0rem 0.5rem 1rem;
   & > div {
     background-color: #fff;
+    box-shadow: 0 0 8px 0 rgba(153, 153, 153, 0.404);
     border-radius: 8px;
-    height: 50px;
-    width: 95%;
+    height: 60px;
+    width: 335px;
     display: flex;
     gap: 8px;
     justify-content: center;
@@ -137,9 +138,9 @@
     position: relative;
 
     & > :first-child {
-      background-color: yellowgreen;
-      height: 40px;
-      width: 40px;
+      /* background-color: yellowgreen; */
+      height: 45px;
+      width: 45px;
       border-radius: 4px;
       overflow: hidden;
       display: flex;
@@ -152,24 +153,42 @@
       }
     }
     & > :nth-child(2) {
-      background-color: yellowgreen;
+      /* background-color: yellowgreen; */
       height: 40px;
-      width: 65%;
+      width: 160px;
       overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      & > h6 {
+        margin: 0;
+      }
+      & > p {
+        font-size: 12px;
+      }
     }
     & > :nth-child(3) {
-      background-color: yellowgreen;
+      /* background-color: yellowgreen; */
       height: 20px;
-      width: 40px;
+      width: 100px;
       margin-top: auto;
-      margin-bottom: 6px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      & > p {
+        font-size: 1.2rem;
+        margin: 0;
+        & > span {
+          font-size: 12px;
+        }
+      }
     }
     & > span {
       display: none;
     }
     &:hover > span {
       display: block;
-      background-color: turquoise;
+      background-color: rgb(224, 64, 64);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -180,6 +199,7 @@
       right: 10px;
       border-radius: 50%;
       cursor: pointer;
+      color: #fff;
     }
   }
 }

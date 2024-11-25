@@ -26,7 +26,6 @@ export default function Home() {
     setActiveIndex(index);
   };
 
-  // Function to render the active component
   const renderActiveComponent = () => {
     switch (activeIndex) {
       case 0:

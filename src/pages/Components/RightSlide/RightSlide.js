@@ -84,9 +84,13 @@ const RightSlide = () => {
                   </div>
                   <div>
                     <h6>{product.Title}</h6>
+                    <p>{product.Description}</p>
                   </div>
                   <div>
-                    <p>Rs.{product.Price}</p>
+                    <p>
+                      <span>Rs.</span>
+                      {product.Price}
+                    </p>
                   </div>
                   <span>
                     <FontAwesomeIcon
@@ -106,9 +110,13 @@ const RightSlide = () => {
                   </div>
                   <div>
                     <h6>{product.Title}</h6>
+                    <p>{product.Description}</p>
                   </div>
                   <div>
-                    <p>Rs.{product.Price}</p>
+                    <p>
+                      <span>Rs.</span>
+                      {product.Price}
+                    </p>
                   </div>
                   <span>
                     <FontAwesomeIcon
